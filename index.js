@@ -92,3 +92,13 @@ const generateHTML = ({ name, githubUserName, email, title, description, install
 </div>
 </body>
 </html>`;
+
+// Function to initialize application
+const init = () => {
+    readmePrompt()
+    .then((answers) => fs.writeFileSync('index.html', generateHTML(answers)))
+        .then(() => console.log('Successfully wrote to index.html'))
+        .catch((err) => console.error(err));
+    };
+    
+    init();
