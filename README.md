@@ -21,7 +21,7 @@
     <a href="https://github.com/kemwalsh/Readme-Generator"><strong>Explore the Docs »</strong></a>
     <br />
     <br />
-    <a href="https://kemwalsh.github.io/Readme-Generator/">View Demo</a>
+    <!-- <a href="https://kemwalsh.github.io/Readme-Generator/">View Demo</a> -->
     ·
     <a href="https://github.com/kemwalsh/Readme-Generator/issues">Report Bug</a>
     ·
@@ -61,7 +61,7 @@ SO THAT I can quickly create a professional README for a new project
 
 ## Application Features:
 
-- ADD THESE
+- Generate readme.md file from node terminal
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -74,8 +74,6 @@ Website's Appearance:
 
 ### Built With
 
-- [HTML](https://en.wikipedia.org/wiki/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
 - [Javascript](https://www.javascript.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -83,8 +81,6 @@ Website's Appearance:
 ## Project Link
 
 [Portfolio Repository](https://github.com/kemwalsh/Readme-Generator)
-
-[Portfolio Live Website](https://kemwalsh.github.io/Readme-Generator/)
 
 ## Credits
 

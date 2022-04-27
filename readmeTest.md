@@ -1,34 +1,33 @@
-# r
+# Readme Generator
 
- ## Table of Contents
- - [Description](#description)
- - [Installation](#installation)
- - [Usage](#usage)
- - [Tests](#tests)
- - [Issues](#issues)
- - [Contributing](#contributing)
- - [License](#license)
- 
- ## Description
- r
- 
- ## Installation
- r
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Questions](#questions)
+- [Contributing](#contributing)
+- [License](#license)
 
- ## Usage
- rr
+## Description
+A node.js application that generates a nice readme file
 
- ## Tests
- rrr
+## Installation
+Open node and answer the prompts
 
- ## Questions
- rrrrr                                                                  
- r                                                         
-https://github.com/rrrr/
+## Usage
+There are no instructions
 
- ## Contributing
- rrrr
+## Tests
+There are no tests at this time
 
- ## License
- MIT
- 
+## Questions
+Kelly Walsh </br>
+Email : kelly@email.com </br>
+GitHub: https://github.com/kemwalsh/
+
+## Contributing
+Kelly Walsh
+
+## License
+MIT

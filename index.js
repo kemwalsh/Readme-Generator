@@ -85,8 +85,8 @@ ${usage}
 ${tests}
 
 ## Questions
-${name}
-Email : ${email}
+${name} </br>
+Email : ${email} </br>
 GitHub: https://github.com/${githubUserName}/
 
 ## Contributing
@@ -100,7 +100,7 @@ ${license}
 const init = () => {
     readmePrompt()
     .then((answers) => fs.writeFileSync('readmeTest.md', generateReadme(answers)))
-        .then(() => console.log('Successfully wrote to readme.md'))
+        .then(() => console.log('Successfully wrote to readmeTest.md'))
         .catch((err) => console.error(err));
     };
     
