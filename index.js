@@ -66,40 +66,40 @@ const readmePrompt = () => {
 
 // Generate Readme.md from prompts
 const generateReadme = ({ name, githubUserName, email, title, description, installation, usage, credits, tests, license, issues }) =>
- `# ${title}
+`# ${title}
 
- ## Table of Contents
- - [Description](#description)
- - [Installation](#installation)
- - [Usage](#usage)
- - [Tests](#tests)
- - [Issues](#issues)
- - [Contributing](#contributing)
- - [License](#license)
- 
- ## Description
- ${description}
- 
- ## Installation
- ${installation}
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Issues](#issues)
+- [Contributing](#contributing)
+- [License](#license)
 
- ## Usage
- ${usage}
+## Description
+${description}
 
- ## Tests
- ${tests}
+## Installation
+${installation}
 
- ## Questions
- ${name}
- Email : ${email}
+## Usage
+${usage}
+
+## Tests
+${tests}
+
+## Questions
+${name}
+Email : ${email}
 GitHub: https://github.com/${githubUserName}/
 
- ## Contributing
- ${credits}
+## Contributing
+${credits}
 
- ## License
- ${license}
- `
+## License
+${license}
+`
 
 // Function to initialize application
 const init = () => {
