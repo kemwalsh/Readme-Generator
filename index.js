@@ -54,7 +54,7 @@ const readmePrompt = () => {
             type: 'list',
             message: 'Which license are you using?',
             name: 'licence',
-            choices: ['MIT Licence', 'Mozilla Public Licence', 'Apache Licence'],
+            choices: ['MIT', 'Mozilla', 'Apache'],
           },
           {
             type: 'input',
@@ -65,39 +65,49 @@ const readmePrompt = () => {
     }
 
 // Generate HTML page from prompts
-const generateHTML = ({ name, githubUserName, email, title, description, installation, usage, credits, tests, license, issues }) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <p class="lead">${name}.</p>
-    <p class="lead">${githubUserName}.</p>
-    <p class="lead">${email}.</p>
-    <h1 class="display-4">${title}</h1>
-    <p class="lead">${description}.</p>
-    <p class="lead">${installation}.</p>
-    <p class="lead">${usage}.</p>
-    <p class="lead">${credits}.</p>
-    <p class="lead">${tests}.</p>
-    <p class="lead">${license}.</p>
-    <p class="lead">${issues}.</p>
-  </div>
-</div>
-</body>
-</html>`;
+const generateReadme = ({ name, githubUserName, email, title, description, installation, usage, credits, tests, license, issues }) =>
+ `# ${title}
+
+ ## Table of Contents
+ - [Description](#description)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Tests](#tests)
+ - [Issues](#issues)
+ - [Contributing](#contributing)
+ - [License](#license)
+ 
+ ## Description
+ ${description}
+ 
+ ## Installation
+ ${installation}
+
+ ## Usage
+ ${usage}
+
+ ## Tests
+ ${tests}
+
+ ## Questions
+ ${name}
+ ${email}
+ 'www.github.com/' + ${githubUserName};
+
+ ## Contributing
+ ${credits}
+
+ ## Licence
+ ${license}
+
+
+ `
 
 // Function to initialize application
 const init = () => {
     readmePrompt()
-    .then((answers) => fs.writeFileSync('index.html', generateHTML(answers)))
-        .then(() => console.log('Successfully wrote to index.html'))
+    .then((answers) => fs.writeFileSync('readme.md', generateReadme(answers)))
+        .then(() => console.log('Successfully wrote to readme.md'))
         .catch((err) => console.error(err));
     };
     
