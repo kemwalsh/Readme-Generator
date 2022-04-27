@@ -64,7 +64,7 @@ const readmePrompt = () => {
       ])
     }
 
-// Generate HTML page from prompts
+// Generate Readme.md from prompts
 const generateReadme = ({ name, githubUserName, email, title, description, installation, usage, credits, tests, license, issues }) =>
  `# ${title}
 
@@ -99,8 +99,6 @@ const generateReadme = ({ name, githubUserName, email, title, description, insta
 
  ## Licence
  ${license}
-
-
  `
 
 // Function to initialize application
