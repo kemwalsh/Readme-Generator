@@ -56,16 +56,11 @@ const readmePrompt = () => {
           name: 'license',
           choices: ['MIT', 'Mozilla', 'Apache'],
         },
-        {
-          type: 'input',
-          message: 'Where can users submit questions about this application?',
-          name: 'issues',
-        },
       ])
     }
 
 // Generate Readme.md from prompts
-const generateReadme = ({ name, githubUserName, email, title, description, installation, usage, credits, tests, license, issues }) =>
+const generateReadme = ({ name, githubUserName, email, title, description, installation, usage, credits, tests, license}) =>
 `# ${title}
 
 ## Table of Contents
@@ -73,7 +68,7 @@ const generateReadme = ({ name, githubUserName, email, title, description, insta
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
-- [Issues](#issues)
+- [Questions](#questions)
 - [Contributing](#contributing)
 - [License](#license)
 
