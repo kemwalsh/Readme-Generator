@@ -69,7 +69,7 @@ SO THAT I can quickly create a professional README for a new project
 
 Website's Appearance:
 
-<!-- Add link to gif -->
+https://drive.google.com/file/d/1LPxT8j8D7z93C9NrD-cBZEyeQikHFizx/view
 <!-- ![Appearance](Assets/gif/codeybuddy.gif) -->
 
 ### Built With
