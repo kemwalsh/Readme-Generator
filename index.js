@@ -36,31 +36,31 @@ const readmePrompt = () => {
           name: 'installation',
         },
         {
-            type: 'input',
-            message: 'Provide instructions and examples for use.',
-            name: 'usage',
-          },
-          {
-            type: 'input',
-            message: 'List your collaborators, if any.',
-            name: 'credits',
-          },
-          {
-            type: 'input',
-            message: 'Describe the tests written for your application and how to use them.',
-            name: 'tests',
-          },
-          {
-            type: 'list',
-            message: 'Which license are you using?',
-            name: 'licence',
-            choices: ['MIT', 'Mozilla', 'Apache'],
-          },
-          {
-            type: 'input',
-            message: 'Where can users submit questions about this application?',
-            name: 'issues',
-          },
+          type: 'input',
+          message: 'Provide instructions and examples for use.',
+          name: 'usage',
+        },
+        {
+          type: 'input',
+          message: 'List your collaborators, if any.',
+          name: 'credits',
+        },
+        {
+          type: 'input',
+          message: 'Describe the tests written for your application and how to use them.',
+          name: 'tests',
+        },
+        {
+          type: 'list',
+          message: 'Which license are you using?',
+          name: 'license',
+          choices: ['MIT', 'Mozilla', 'Apache'],
+        },
+        {
+          type: 'input',
+          message: 'Where can users submit questions about this application?',
+          name: 'issues',
+        },
       ])
     }
 
@@ -91,20 +91,20 @@ const generateReadme = ({ name, githubUserName, email, title, description, insta
 
  ## Questions
  ${name}
- ${email}
- 'www.github.com/' + ${githubUserName};
+ Email : ${email}
+GitHub: https://github.com/${githubUserName}/
 
  ## Contributing
  ${credits}
 
- ## Licence
+ ## License
  ${license}
  `
 
 // Function to initialize application
 const init = () => {
     readmePrompt()
-    .then((answers) => fs.writeFileSync('readme.md', generateReadme(answers)))
+    .then((answers) => fs.writeFileSync('readmeTest.md', generateReadme(answers)))
         .then(() => console.log('Successfully wrote to readme.md'))
         .catch((err) => console.error(err));
     };
